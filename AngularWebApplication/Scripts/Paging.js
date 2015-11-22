@@ -25,7 +25,7 @@ module.controller("exampleCtrl", function ($scope, $http) {
         enableSorting: true,
         enableFilter: true,
         enableColResize: true,
-        
+        rowSelection: 'single',
         columnDefs: columnDefs
     };
 
@@ -56,8 +56,10 @@ module.controller("exampleCtrl", function ($scope, $http) {
         var _newValue = s.newValue;
         var _oldValue = s.oldValue;// old values can be obtained by using s.data["columnName"]
         var _rowIndex = s.rowIndex;
+        // Validation can be done before storing the value to its source object (JSON)
+        s.data["Country"] = s.newValue;
         alert("value changed rows at " + _rowIndex + " from " + '"' + _oldValue + '"' + " to " + '"' + _newValue + '"' + ".");
-        return false;
+       // return false;
     };
 
     function createNewDatasource() {

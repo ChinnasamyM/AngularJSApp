@@ -6,7 +6,7 @@
   padding: 2px;
 }
 .ag-fresh .ag-cell-focus {
-  border: 1px solid #a9a9a9;
+  border: 1px solid #a9a9a9;  
 }
 .ag-fresh .ag-cell-no-focus {
   border-right: 1px dotted #808080;
@@ -69,10 +69,13 @@
   color: #800000;
 }
 .ag-fresh .ag-row-selected {
-  background-color: #b0e0e6 !important;
+  /*background-color: #b0e0e6 !important;*/
+  background-color: #3879d9 !important;
+  color: white !important;
 }
 .ag-fresh .ag-body .ag-row-odd {
-  background-color: #f6f6f6;
+  /*background-color: #f6f6f6;*/
+  background-color: #eeeeee;
 }
 .ag-fresh .ag-body .ag-row-even {
   background-color: #fff;

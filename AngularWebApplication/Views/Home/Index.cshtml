@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Angular Grid Page";
 }
 
 @*<script type="text/javascript" src="~/Scripts/AngularJs/angular.min.js"></script>
@@ -23,6 +23,10 @@
 
     </div>
     <div style="padding:10px 15px 10px 35px; height:400px;width:50%">
+        <span ng-repeat="selecteRow in gridOptions.selectedRows">
+            {{selecteRow.athlete}}
+        </span>
+
         <div style="height:90%;" ag-grid="gridOptions" class="ag-fresh"></div>
         
     </div>
