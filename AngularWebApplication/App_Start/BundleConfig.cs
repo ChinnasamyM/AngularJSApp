@@ -26,16 +26,17 @@ namespace AngularWebApplication
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css"
-                      , "~/Content/ag-grid.css"
-                      , "~/Content/theme-fresh.css"));
+                      //, "~/Content/ag-*"
+                      //, "~/Content/theme-fresh.css"
+                      ));
 
             bundles.Add(new ScriptBundle("~/bundles/Angular").Include(
                         "~/Scripts/AngularJs/angular.js"
-                        , "~/Scripts/ag-grid.js"
-                        , "~/Scripts/Paging.js"
+                        , "~/Scripts/AngularJs/ag-*"
+                        //, "~/Scripts/Paging.js"
                         ));
             bundles.Add(new StyleBundle("~/Content/cssAngular").Include(
-                      "~/Content/ag-grid.css"
+                      "~/Content/Angular/ag-grid.css"
                       , "~/Content/theme-fresh.css"));
             //bundles.UseCdn = true;
             //var cdnPath = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js";
